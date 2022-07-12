@@ -1,0 +1,34 @@
+# diff
+
+# version
+# Betaflight / STM32F745 (S745) 4.2.9 Apr 27 2021 / 19:34:04 (e097f4ab7) MSP API: 1.43
+# config: manufacturer_id: HBRO, board_name: KAKUTEF7, version: cc8e118f, date: 2020-03-04T02:37:20Z
+
+# start the command batch
+batch start
+
+board_name KAKUTEF7
+manufacturer_id HBRO
+
+# name: KolibriFPV
+
+# feature
+feature -RX_PARALLEL_PWM
+feature -DYNAMIC_FILTER
+feature RX_SERIAL
+
+# master
+set acc_calibration = -112,49,-92,1
+set baro_hardware = AUTO
+set serialrx_provider = SBUS
+set motor_pwm_protocol = PWM
+set pid_process_denom = 16
+set gyro_1_align_yaw = 2700
+set name = KolibriFPV
+
+profile 0
+
+rateprofile 0
+
+# end the command batch
+batch end
